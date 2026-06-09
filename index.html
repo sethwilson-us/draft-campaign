@@ -11,22 +11,33 @@
 			border-style: none; border-radius: 1rem;
 			height: 6rem;
 			background-color: rgb(255, 0, 0); color: rgb(255, 255, 255);
+			cursor: pointer;
 		}
 	}
-	@media (max-resolution:150dpi) and (min-width:768px) {
+	@media (max-resolution:150dpi) {
 		body {font-size: 1rem;}
-		div {display: block; margin-left: auto; margin-right: auto; width: 768px;}
 		button {
 			font-family: inherit; font-weight: bold; font-size:1.5rem;
 			border-style: none; border-radius: .5rem;
 			height: 3rem;
 			background-color: rgb(255, 0, 0); color: rgb(255, 255, 255);
+			cursor: pointer;
 		}
 	}
+	@media (max-resolution:150dpi) and (min-width:768px) {
+		div {display: block; margin-left: auto; margin-right: auto; width: 768px;}
+	}
+	@media (max-resolution:150dpi) and (min-width:1152px) {
+		div.left-side {display: block; margin-left: auto; margin-right: auto; width: 768px; }
+		div.right-side {display: block; margin-left: auto; margin-right: auto; width: 376px; }
+		div.flex-container {display: flex; flex-wrap: wrap; width: 1152px;}
+	}
+
 </style>
 </head>
 <body>
-<div>
+<div class="flex-container" width=100%;>
+<div class="left-side">
 <img src="wilson_campaign_square_medium.jpg" width=100%><br>
 <h1>Seth Wilson</h1>
 <h2>Candidate for Treasurer</h2>
@@ -43,6 +54,8 @@
 <p>Later, in 2013 I was appointed as a Member of the Washington County Republican Central Committee. I was elected to the Central Committee in 2014 and then re-elected in 2018 and 2022. I served as the Committee's First Vice Chair from 2014 to 2021 and its Chair in 2021 and 2022. During my time on the Central Committee, I have helped appoint multiple state legislators, county commissioners, and board members.</p>
 <p>In 2024, I was elected as an Alternate Delegate to the Republican National Convention representing the Sixth Congressional District.</p>
 <p>Politically, I believe in conservative principles of governance and the traditional values we share here in Western Maryland. I am a Republican because our Republican Party represents those principles and values better than any other political party. Creating a more effective and efficient government requires working with people. The people in the Republican Party are the best and I know I can work with them to achieve great things for everyone.</p>
+<h2>Other Nonprofit Community Involvement</h2>
+<p>I am the current Treasurer and member of the Board of Directors of the Central Maryland Chapter of the Information Systems Security Association and the current Treasurer and member of the Board of Directors of the ISACA Central Maryland Chapter. I am also a member of the Volunteer Fire Company of Halfawy, MD, where I serve as a volunteer Firefighter and EMT.</p>
 <p>Here is a link to my official Facebook page: <a href="https://www.facebook.com/voteforsethwilson">https://www.facebook.com/voteforsethwilson</a></p>
 <p>Thank you for visiting my web page!</p>
 <p>&nbsp;</p>
@@ -51,6 +64,12 @@
 </form>
 <p>&nbsp;</p>
 <p>Authority: Citizens For Seth Wilson. Yvonne Wilson, Treasurer. Copyright 2026. All rights reserved.</p>
+</div>
+<div class="right-side">
+<h1>Campaign News</h1>
+<a href="signs.html"><h2>Yard Signs!</h2></a>
+<p>Yard signs are available now! <a href="signs.html">Read more...</a></p>
+</div>
 </div>
 </body>
 </html>
